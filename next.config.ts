@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Source Maps für bessere Debugging-Erfahrung
+  productionBrowserSourceMaps: false,
+  
+  // Turbopack ist jetzt stabil, keine experimentellen Einstellungen nötig
+  // Die Standard-Konfiguration funktioniert perfekt mit CSS Modules
 };
 
 export default nextConfig;

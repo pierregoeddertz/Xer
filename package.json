@@ -1,27 +1,69 @@
 {
-  "name": "xer",
+  "name": "@xer/component",
   "version": "0.1.0",
-  "private": true,
+  "description": "Eine universelle, SEO-optimierte und accessibility-freundliche React Komponente",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:lib": "rollup -c",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "accessibility",
+    "seo",
+    "typescript",
+    "nextjs",
+    "universal"
+  ],
+  "author": {
+    "name": "Xer Component Team",
+    "email": "team@xer-component.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xer-component/xer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xer-component/xer/issues"
+  },
+  "homepage": "https://github.com/xer-component/xer#readme",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.5"
+    "next": "15.4.5",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.3.1",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
-    "@eslint/eslintrc": "^3"
+    "rollup": "^4.46.2",
+    "rollup-plugin-dts": "^6.2.1",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }
