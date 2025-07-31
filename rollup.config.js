@@ -34,10 +34,13 @@ export default [
       }),
       typescript({ 
         tsconfig: './tsconfig.json',
-        exclude: ['**/__tests__/**']
+        exclude: ['**/__tests__/**'],
+        compilerOptions: {
+          jsx: 'react-jsx'
+        }
       }),
     ],
-    external: ['react', 'react-dom'],
+    external: ['react', 'react-dom', 'react/jsx-runtime'],
   },
   {
     input: 'src/components/Xer/index.ts',

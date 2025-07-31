@@ -41,15 +41,17 @@ Eine universelle, SEO-optimierte und accessibility-freundliche React-Komponente 
 ## 📦 Installation
 
 ```bash
-npm install @xer/component
+npm install xer-component
 ```
+
+**Wichtig:** Das Package benötigt React 18+ als Peer Dependency. Stelle sicher, dass React in deinem Projekt installiert ist.
 
 ## 🚀 Verwendung
 
 ### **Grundlegende Verwendung**
 
 ```tsx
-import { Xer } from '@xer/component';
+import { Xer } from 'xer-component';
 
 function App() {
   return (
