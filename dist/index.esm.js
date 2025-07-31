@@ -1,3 +1,4 @@
+'use client';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useRef, useState, useMemo, useCallback, useEffect } from 'react';
 

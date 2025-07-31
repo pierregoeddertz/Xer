@@ -39,6 +39,18 @@ export default [
           jsx: 'react-jsx'
         }
       }),
+      // Füge 'use client' Direktive zum Bundle hinzu
+      {
+        name: 'add-client-directive',
+        renderChunk(code, chunk) {
+          if (chunk.fileName === 'index.js' || chunk.fileName === 'index.esm.js') {
+            return {
+              code: "'use client';\n" + code,
+              map: null
+            };
+          }
+        }
+      }
     ],
     external: ['react', 'react-dom', 'react/jsx-runtime'],
   },
