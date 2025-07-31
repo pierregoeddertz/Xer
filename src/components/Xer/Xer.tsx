@@ -1,4 +1,4 @@
-'use client';
+
 
 import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react';
 import styles from './Xer.module.css';

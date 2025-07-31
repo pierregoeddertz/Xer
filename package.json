@@ -1,7 +1,7 @@
 {
   "name": "@xer/component",
-  "version": "0.1.0",
-  "description": "Eine universelle, SEO-optimierte und accessibility-freundliche React Komponente",
+  "version": "1.0.0",
+  "description": "Advanced horizontal scroll component with drag functionality, touch support, and accessibility features - engineered by II-II-II",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -10,56 +10,49 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "build:lib": "rollup -c",
-    "prepublishOnly": "npm run build:lib"
+    "build:lib": "rollup -c --bundleConfigAsCjs",
+    "prepublishOnly": "npm run build:lib",
+    "clean": "rm -rf dist",
+    "dev": "npm run build:lib && node -e \"console.log('Library built successfully!')\""
   },
   "keywords": [
     "react",
     "component",
+    "scroll",
+    "horizontal",
+    "drag",
+    "touch",
     "accessibility",
     "seo",
     "typescript",
-    "nextjs",
     "universal"
   ],
   "author": {
-    "name": "Xer Component Team",
-    "email": "team@xer-component.com"
+    "name": "II-II-II",
+    "email": "contact@ii-ii-ii.com"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xer-component/xer.git"
+    "url": "https://github.com/pierregoeddertz/Xer.git"
   },
   "bugs": {
-    "url": "https://github.com/xer-component/xer/issues"
+    "url": "https://github.com/pierregoeddertz/Xer/issues"
   },
-  "homepage": "https://github.com/xer-component/xer#readme",
+  "homepage": "https://github.com/pierregoeddertz/Xer#readme",
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
   },
-  "dependencies": {
-    "next": "15.4.5",
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0"
-  },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-node-resolve": "^15.3.1",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.5",
     "rollup": "^4.46.2",
     "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5"
   },
   "engines": {

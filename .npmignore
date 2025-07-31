@@ -1,0 +1,35 @@
+# Source files
+src/
+tsconfig.json
+rollup.config.js
+
+# Development files
+.git/
+.gitignore
+.DS_Store
+*.log
+
+# Build artifacts
+.next/
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# Test files
+**/*.test.*
+**/*.spec.*
+
+# Documentation (except README)
+docs/
+*.md
+!README.md
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Environment files
+.env* 
