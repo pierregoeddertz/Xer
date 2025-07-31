@@ -1,6 +1,6 @@
 {
   "name": "xer-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced horizontal scroll component with drag functionality, touch support, and accessibility features - engineered by II-II-II",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
